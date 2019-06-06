@@ -1,0 +1,19 @@
+.footer {
+  height: 300px;
+
+  &-icon {
+    border: #1a2633 solid 1px;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 100px;
+  }
+
+  &-container {
+    width: 600px;
+  }
+
+  &-container-2 {
+    width: 400px;
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "turing-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-brands-svg-icons": "^5.8.1",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@material-ui/core": "^3.9.3",
+    "axios": "^0.18.0",
+    "bulma": "^0.7.4",
+    "connected-react-router": "^6.3.2",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.11.0",
+    "node-sass-chokidar": "^1.3.4",
+    "qs": "^6.7.0",
+    "rc-select": "^9.1.0",
+    "react": "^16.8.6",
+    "react-css-loaders": "^0.0.5",
+    "react-dom": "^16.8.6",
+    "react-facebook-login": "^4.1.1",
+    "react-pagination-library": "^0.1.14",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^2.1.8",
+    "react-select": "^2.4.2",
+    "react-stripe-elements": "^2.0.3",
+    "react-test-renderer": "^16.8.6",
+    "react-toastify": "^5.0.0-rc.6",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.0.2"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "node --max_old_space_size=4096 node_modules/.bin/react-scripts start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

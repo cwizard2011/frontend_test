@@ -1,0 +1,167 @@
+.flex {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Generic Spacing Helpers */
+$space: 100;
+@while $space >= 0 {
+  //margin helpers
+  .m-t-#{$space} {
+    margin-top: #{$space}px !important;
+  }
+  .m-r-#{$space} {
+    margin-right: #{$space}px !important;
+  }
+  .m-l-#{$space} {
+    margin-left: #{$space}px !important;
+  }
+  .m-b-#{$space} {
+    margin-bottom: #{$space}px !important;
+  }
+  .margin-#{$space} {
+    margin: #{$space}px !important;
+  }
+
+  //padding helpers
+  .p-t-#{$space} {
+    padding-top: #{$space}px !important;
+  }
+  .p-r-#{$space} {
+    padding-right: #{$space}px !important;
+  }
+  .p-l-#{$space} {
+    padding-left: #{$space}px !important;
+  }
+  .p-b-#{$space} {
+    padding-bottom: #{$space}px !important;
+  }
+  .padding-#{$space} {
+    padding: #{$space}px !important;
+  }
+
+  $space: $space - 5;
+}
+
+/* Generic size(height/width) Helpers */
+$size: 100;
+@while $size >= 5 {
+  .width-#{$size} {
+    width: #{$size}px !important;
+  }
+
+  .height-#{$size} {
+    height: #{$size}px !important;
+  }
+
+  $size: $size - 10;
+}
+
+/* Generic Font size Helpers */
+$fontSize: 60;
+@while $fontSize >= 5 {
+  .font-#{$fontSize} {
+    font-size: #{$fontSize}px !important;
+    /** font awesome over-rides font size by using a more `specific` class.
+    * we are over-riding that `specific` class to give our custom font size.
+    */
+    &.fa {
+      font-size: #{$fontSize}px !important;
+    }
+  }
+  $fontSize: $fontSize - 5;
+}
+
+.width-100 {
+  width: 100% !important;
+}
+
+.width-100-px {
+  width: 100px !important;
+}
+
+.height-100 {
+  height: 100% !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.link-white {
+  color: white;
+}
+.link-white:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.link-blue {
+  color: white;
+}
+.link-blue:hover {
+  text-decoration: underline;
+  color: #3bd2b2;
+}
+
+.select-field {
+  width: 268px;
+}
+
+.fb-class {
+  height: 36px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  border-radius: 5px;
+
+  & > i {
+    margin-right: 10px;
+  }
+}
+
+.purchase-field {
+  height: 30px;
+  border-bottom: 1px solid #1a2633;
+}
+
+.wrap {
+  word-wrap: break-word;
+}
